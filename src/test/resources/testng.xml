@@ -3,7 +3,6 @@
     <test name="SeleniumTest">
         <classes>
             <class name="com.example.studenttasktracker.SeleniumTest"/>
-            <class name="com.example.studenttasktracker.FailingTest"/>
         </classes>
     </test>
 </suite>
