@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite">
+    <test name="SeleniumTest">
+        <classes>
+            <class name="com.example.studenttasktracker.SeleniumTest"/>
+        </classes>
+    </test>
+</suite>
