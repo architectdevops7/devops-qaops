@@ -12,7 +12,7 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <sonar.host.url>http://18.205.18.147:9000/</sonar.host.url>
+        <sonar.host.url>http://54.145.222.184:9000/</sonar.host.url>
         <sonar.login>9e0adeeb48f100104a0391a401dfc1e6a90b1bf4</sonar.login>
     </properties>
 
@@ -72,6 +72,8 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
+            
+            <!-- Maven Surefire Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -83,12 +85,8 @@
                     <argLine>-Dtestng.dtd.http=true</argLine>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.sonarsource.scanner.maven</groupId>
-                <artifactId>sonar-maven-plugin</artifactId>
-                <version>18.205.18.147</version>
-           </plugin>
-
+            
+            <!-- SonarQube Plugin -->
             <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
@@ -107,4 +105,3 @@
     </build>
 
 </project>
-
