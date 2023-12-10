@@ -22,7 +22,10 @@ public class SeleniumTest {
         Assert.assertTrue("Page title is not correct",driver.getTitle().equals("Google"));
     }
 
-
+    public void insecureCode() {
+        String password = "hardcoded_password"; // Introduce a hardcoded password
+        System.out.println("Password: " + password);
+    }
 }
 
 
