@@ -1,4 +1,4 @@
-package com.qascript;
+package com.example.studenttasktracker;
 
 import org.junit.Assert;
 import org.junit.Test;
